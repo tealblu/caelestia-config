@@ -1,0 +1,54 @@
+{
+    "record": {
+        "extraArgs": []
+    },
+    "wallpaper": {
+        "wallpaperDir": "/home/indigo/Pictures/Wallpapers",
+        "postHook": "echo $WALLPAPER_PATH"
+    },
+    "theme": {
+        "enableTerm": true,
+        "enableHypr": true,
+        "enableDiscord": true,
+        "enableSpicetify": true,
+        "enableFuzzel": true,
+        "enableBtop": true,
+        "enableGtk": true,
+        "enableQt": true
+    },
+    "toggles": {
+        "communication": {
+            "discord": {
+                "enable": true,
+                "match": [{ "class": "discord" }],
+                "command": ["discord"],
+                "move": true
+            }
+        },
+        "music": {
+            "spotify": {
+                "enable": true,
+                "match": [{ "class": "Spotify" }, { "initialTitle": "Spotify" }, { "initialTitle": "Spotify Free" }],
+                "command": ["spicetify", "watch", "-s"],
+                "move": true
+            }
+        },
+        "sysmon": {
+            "missioncenter": {
+                "enable": true,
+                "match": [
+                    { "class": "missioncenter", "title": "missioncenter", "workspace": { "name": "special:sysmon" } }
+                ],
+                "command": ["missioncenter"]
+            }
+        },
+        "todo": {
+            "obsidian": {
+                "enable": true,
+                "match": [{ "class": "obsidian" }],
+                "command": ["obsidian"],
+                "move": true
+            }
+        }
+    }
+}
