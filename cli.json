@@ -4,7 +4,7 @@
     },
     "wallpaper": {
         "wallpaperDir": "/home/indigo/Pictures/Wallpapers",
-        "postHook": "echo $WALLPAPER_PATH"
+        "postHook": "matugen image $(caelestia wallpaper) -t scheme-tonal-spot"
     },
     "theme": {
         "enableTerm": true,
