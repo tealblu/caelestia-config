@@ -20,8 +20,8 @@
         "communication": {
             "discord": {
                 "enable": true,
-                "match": [{ "class": "discord" }],
-                "command": ["discord"],
+                "match": [{ "class": "equibop" }],
+                "command": ["equibop", "--ozone-platform-hint=x11"],
                 "move": true
             }
         },
@@ -29,7 +29,7 @@
             "spotify": {
                 "enable": true,
                 "match": [{ "class": "Spotify" }, { "initialTitle": "Spotify" }, { "initialTitle": "Spotify Free" }],
-                "command": ["spicetify", "watch", "-s"],
+                "command": ["spicetify", "watch", "-s", "--ozone-platform-hint=x11"],
                 "move": true
             }
         },

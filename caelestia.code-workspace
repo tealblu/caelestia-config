@@ -1,14 +1,11 @@
 {
-    "folders": [
+	"folders": [
 		{
 			"path": "."
 		},
 		{
-			"path": "../matugen"
-		},
-		{
-			"path": "../hypr"
+			"path": "../../.local/share/caelestia"
 		}
 	],
-    "settings": {}
+	"settings": {}
 }

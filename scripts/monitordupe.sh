@@ -8,13 +8,13 @@ duplicated_keyword="HDMI-A-1"
 
 # Function to set duplicated state
 set_duplicated() {
-  hyprctl keyword monitor "HDMI-A-1,preferred,auto-right,auto,mirror,DP-2"
+  hyprctl keyword monitor "HDMI-A-1,preferred,auto,1,mirror,DP-3"
 }
 
 # Function to set standard state
 set_standard() {
   hyprctl reload
-  hyprctl dispatch forcerendererreload
+#  hyprctl dispatch forcerendererreload
 }
 
 # Check if the current state includes the 'mirror' keyword

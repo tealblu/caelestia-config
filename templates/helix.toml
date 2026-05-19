@@ -1,0 +1,133 @@
+# Helix Theme Template using Material You with improved contrast
+
+# --- Syntax Elements ---
+
+"attribute" = "{{ primary.hex }}"
+"type" = "{{ secondary.hex }}"
+"type.enum.variant" = "{{ secondary.hex }}"
+"constructor" = "{{ primaryFixed.hex }}"
+
+"constant" = "{{ tertiary.hex }}"
+"constant.character" = "{{ tertiary.hex }}"
+"constant.character.escape" = "{{ tertiaryContainer.hex }}"
+
+"string" = "{{ primary.hex }}"
+"string.regexp" = "{{ tertiaryContainer.hex }}"
+"string.special" = "{{ primaryFixed.hex }}"
+"string.special.symbol" = "{{ error.hex }}"
+
+"comment" = { fg = "{{ onSurfaceVariant.hex }}", modifiers = ["italic"] }
+
+"variable" = "{{ onBackground.hex }}"
+"variable.parameter" = { fg = "{{ errorContainer.hex }}", modifiers = ["italic"] }
+"variable.builtin" = "{{ error.hex }}"
+"variable.other.member" = "{{ primary.hex }}"
+
+"label" = "{{ primaryFixed.hex }}"
+
+"punctuation" = "{{ onSurfaceVariant.hex }}"
+"punctuation.special" = "{{ secondary.hex }}"
+
+"keyword" = "{{ primary.hex }}"
+"keyword.control.conditional" = { fg = "{{ primary.hex }}", modifiers = ["italic"] }
+
+"operator" = "{{ secondary.hex }}"
+
+"function" = "{{ primary.hex }}"
+"function.macro" = "{{ primaryContainer.hex }}"
+
+"tag" = "{{ primary.hex }}"
+"namespace" = { fg = "{{ secondary.hex }}", modifiers = ["italic"] }
+
+"special" = "{{ primary.hex }}"
+
+# --- Markup ---
+
+"markup.heading.1" = "{{ error.hex }}"
+"markup.heading.2" = "{{ primary.hex }}"
+"markup.heading.3" = "{{ secondary.hex }}"
+"markup.heading.4" = "{{ tertiary.hex }}"
+"markup.heading.5" = "{{ primaryFixed.hex }}"
+"markup.heading.6" = "{{ onPrimaryFixedVariant.hex }}"
+
+"markup.list" = "{{ secondary.hex }}"
+"markup.list.unchecked" = "{{ onSurfaceVariant.hex }}"
+"markup.list.checked" = "{{ primaryFixed.hex }}"
+
+"markup.bold" = { fg = "{{ primary.hex }}", modifiers = ["bold"] }
+"markup.italic" = { fg = "{{ secondary.hex }}", modifiers = ["italic"] }
+
+"markup.link.url" = { fg = "{{ primary.hex }}", modifiers = ["italic", "underlined"] }
+"markup.link.text" = "{{ primaryFixed.hex }}"
+"markup.link.label" = "{{ tertiary.hex }}"
+"markup.raw" = "{{ onTertiaryContainer.hex }}"
+"markup.quote" = "{{ tertiaryContainer.hex }}"
+
+# --- Diff ---
+
+"diff.plus" = "{{ tertiary.hex }}"
+"diff.minus" = "{{ error.hex }}"
+"diff.delta" = "{{ primary.hex }}"
+
+# --- UI Elements ---
+
+"ui.background" = { fg = "{{ onBackground.hex }}", bg = "none" }
+
+"ui.linenr" = { fg = "{{ onSurfaceVariant.hex }}" }
+"ui.linenr.selected" = { fg = "{{ primaryFixed.hex }}" }
+
+"ui.statusline" = { fg = "{{ onPrimaryContainer.hex }}", bg = "none" }
+"ui.statusline.inactive" = { fg = "{{ onSurfaceVariant.hex }}", bg = "none" }
+"ui.statusline.normal" = { fg = "{{ background.hex }}", bg = "none", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "{{ background.hex }}", bg = "none", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "{{ background.hex }}", bg = "none", modifiers = ["bold"] }
+
+"ui.popup" = { fg = "{{ onSurface.hex }}", bg = "none" }
+"ui.window" = { fg = "{{ onSurfaceVariant.hex }}" }
+"ui.help" = { fg = "{{ onSurfaceVariant.hex }}", bg = "none" }
+
+"ui.bufferline" = { fg = "{{ onSurfaceVariant.hex }}", bg = "none" }
+"ui.bufferline.active" = { fg = "{{ onPrimary.hex }}", bg = "{{ primary.hex }}", underline = { color = "{{ primary.hex }}", style = "line" } }
+"ui.bufferline.background" = { bg = "none" }
+
+"ui.text" = "{{ onBackground.hex }}"
+"ui.text.focus" = { fg = "{{ primary.hex }}", bg = "none", modifiers = ["bold"] }
+"ui.text.inactive" = { fg = "{{ onSurfaceVariant.hex }}" }
+"ui.text.directory" = { fg = "{{ primary.hex }}" }
+
+"ui.virtual" = "{{ onSurfaceVariant.hex }}"
+"ui.virtual.ruler" = { bg = "none" }
+"ui.virtual.indent-guide" = "{{ surfaceContainerLow.hex }}"
+"ui.virtual.inlay-hint" = { fg = "{{ onSurfaceVariant.hex }}", bg = "none" }
+"ui.virtual.jump-label" = { fg = "{{ primaryContainer.hex }}", modifiers = ["bold"] }
+
+"ui.selection" = { bg = "{{ outlineVariant.hex }}" }
+
+"ui.cursor" = { modifiers = ["reversed"] }
+"ui.cursor.primary" = { modifiers = ["reversed"] }
+"ui.cursor.match" = { fg = "{{ error.hex }}", modifiers = ["bold"] }
+
+# Completely remove the hardcoded bg hexes that foot is swallowing
+"ui.cursor.primary.normal" = { modifiers = ["reversed"] }
+"ui.cursor.primary.insert" = { modifiers = ["reversed"] }
+"ui.cursor.primary.select" = { modifiers = ["reversed"] }
+
+"ui.highlight" = { bg = "{{ secondaryContainer.hex }}", modifiers = ["bold"] }
+
+"ui.menu" = { fg = "{{ onSurface.hex }}", bg = "none" }
+"ui.menu.selected" = { fg = "{{ primary.hex }}", bg = "none", modifiers = ["bold"] }
+
+# --- Diagnostics ---
+
+"diagnostic.error" = { fg = "{{ error.hex }}", underline = { color = "{{ error.hex }}", style = "curl" } }
+"diagnostic.warning" = { fg = "{{ secondary.hex }}", underline = { color = "{{ secondary.hex }}", style = "curl" } }
+"diagnostic.info" = { fg = "{{ tertiary.hex }}", underline = { color = "{{ tertiary.hex }}", style = "curl" } }
+"diagnostic.hint" = { fg = "{{ tertiaryContainer.hex }}", underline = { color = "{{ tertiaryContainer.hex }}", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+
+# --- Fallbacks (non-template usage) ---
+
+error = "{{ error.hex }}"
+warning = "{{ tertiary.hex }}"
+info = "{{ primary.hex }}"
+hint = "{{ secondary.hex }}"
